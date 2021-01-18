@@ -56,8 +56,13 @@ export default function App() {
       {emojisWeKnow.map(function (emoji) {
         return (
           <span
+            id="emo"
             onClick={() => emojiClickHandler(emoji)}
-            style={{ padding: "0.5rem", fontSize: "2rem", cursor: "pointer" }}
+            style={{
+              padding: "0.5rem",
+              fontSize: "2rem",
+              cursor: "pointer"
+            }}
             key={emoji}
           >
             {emoji}{" "}
